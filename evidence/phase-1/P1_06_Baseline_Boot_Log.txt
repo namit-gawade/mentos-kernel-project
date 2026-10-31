@@ -1,0 +1,1039 @@
+SeaBIOS (version 1.15.0-1)
+[SERIAL] Booting from DVD/CD...
+[SERIAL]
+[SERIAL] [bootloader] Start...
+[SERIAL] [bootloader] Initializing the boot_info structure...
+[SERIAL] [bootloader] Setting up paging...
+[SERIAL] [bootloader] Switching page directory...
+[SERIAL] [bootloader] Enabling paging...
+[SERIAL] [bootloader] Relocating kernel image...
+[SERIAL] [bootloader] Calling `boot_kernel`...
+[SERIAL]
+[SERIAL] [ NT | kernel/src/kernel.c:123                  ] [KERNEL] Booting...
+[SERIAL] [ NT | kernel/src/kernel.c:165                  ] [KERNEL] Initialize resource registry...
+[SERIAL] [ NT | kernel/src/kernel.c:169                  ] [KERNEL] Initialize the video...
+[SERIAL] [ NT | kernel/src/kernel.c:179                  ] [KERNEL] Initialize modules...
+[SERIAL] [ NT | kernel/src/kernel.c:188                  ] [KERNEL] Initialize physical memory manager...
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:105 ] [PMM   ] Zone: DMA
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:106 ] [PMM   ]     Number of Pages      : 2048
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:107 ] [PMM   ]     Number of Free Pages : 2048
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:108 ] [PMM   ]     Startint PFN         : 0
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:109 ] [PMM   ]     Zone Size            : 8.00 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:110 ] [PMM   ]     Zone Memory Map      : 0xc04cb000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:111 ] [PMM   ]     Buddy System Status  : DMA        0   0   0   0   0   0   0   0   0   B
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:105 ] [PMM   ] Zone: Normal
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:106 ] [PMM   ]     Number of Pages      : 22528
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:107 ] [PMM   ]     Number of Free Pages : 22528
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:108 ] [PMM   ]     Startint PFN         : 7420
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:109 ] [PMM   ]     Zone Size            : 856.00 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:110 ] [PMM   ]     Zone Memory Map      : 0xc0529330
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:111 ] [PMM   ]     Buddy System Status  : Normal     0   0   0   0   0   0   0   0   0   B
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:105 ] [PMM   ] Zone: HighMem
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:106 ] [PMM   ]     Number of Pages      : 4294950912
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:107 ] [PMM   ]     Number of Free Pages : 4294950912
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:108 ] [PMM   ]     Startint PFN         : 229377
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:109 ] [PMM   ]     Zone Size            : 192.00 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:110 ] [PMM   ]     Zone Memory Map      : 0xc102b034
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:111 ] [PMM   ]     Buddy System Status  : HighMem    0   0   0   0   0   0   0   0   0   B
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:80 ] [PMM   ] System Memory Information:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:81 ] [PMM   ]     Total Memory Size       : 1.07 GB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:82 ] [PMM   ]     Page Indices            : Min: 0, Max: 278528
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:85 ] [PMM   ] Memory Map:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:86 ] [PMM   ]     Total Page Frames       : 280288
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:87 ] [PMM   ]     Size                    : 13.90 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:88 ] [PMM   ] Memory Zones:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:64 ] [PMM   ]     DMA Zone:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:65 ] [PMM   ]         Physical : 0x00000000 to 0x00800000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:66 ] [PMM   ]         Virtual  : 0xf8000000 to 0xf8800000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:67 ] [PMM   ]         Size     : 8.00 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:64 ] [PMM   ]     LowMem Zone:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:65 ] [PMM   ]         Physical : 0x01cfc000 to 0x374fc000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:66 ] [PMM   ]         Virtual  : 0xc12b2000 to 0xf71b6000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:67 ] [PMM   ]         Size     : 856.00 MB
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:64 ] [PMM   ]     HighMem Zone:
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:65 ] [PMM   ]         Physical : 0x38001000 to 0x44001000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:66 ] [PMM   ]         Virtual  : 0x00000000 to 0x00000000
+[SERIAL] [ NT | kernel/src/mem/alloc/zone_allocator.c:67 ] [PMM   ]         Size     : 192.00 MB
+[SERIAL] [ NT | kernel/src/kernel.c:197                  ] [KERNEL] Initialize slab allocator.
+[SERIAL] [ NT | kernel/src/kernel.c:206                  ] [KERNEL] Initialize Global Descriptor Table (GDT)...
+[SERIAL] [ NT | kernel/src/kernel.c:212                  ] [KERNEL] Initialize Interrupt Service Routine(ISR)...
+[SERIAL] [ NT | kernel/src/kernel.c:218                  ] [KERNEL] Initialize system calls...
+[SERIAL] [ NT | kernel/src/kernel.c:224                  ] [KERNEL] Initialize IRQ...
+[SERIAL] [ NT | kernel/src/kernel.c:230                  ] [KERNEL] Relocate modules.
+[SERIAL] [ NT | kernel/src/kernel.c:239                  ] [KERNEL] Initialize paging.
+[SERIAL] [ NT | kernel/src/kernel.c:257                  ] [KERNEL] Complete video initialization.
+[SERIAL] [ NT | kernel/src/kernel.c:261                  ] [KERNEL] Initialize virtual memory mapping.
+[SERIAL] [ NT | kernel/src/kernel.c:270                  ] [KERNEL] Install the timer.
+[SERIAL] [ NT | kernel/src/kernel.c:276                  ] [KERNEL] Install RTC.
+[SERIAL] [ NT | kernel/src/kernel.c:297                  ] [KERNEL] Initialize the filesystem.
+[SERIAL] [ NT | kernel/src/kernel.c:304                  ] [KERNEL] Initialize ATA devices...
+[SERIAL] [ WR | kernel/src/drivers/ata.c:1065            ] [ATA   ] [Primary Slave   ] IDENTIFY did not enter the data phase (status 0x00, erro.
+[SERIAL] [ WR | kernel/src/drivers/ata.c:1065            ] [ATA   ] [Secondary Master] IDENTIFY did not enter the data phase (status 0x41, erro.
+[SERIAL] [ ER | kernel/src/drivers/ata.c:669             ] [ATA   ] [Secondary Slave] Device error [abrt,] status [err,rdy,]
+[SERIAL] [ WR | kernel/src/drivers/ata.c:1065            ] [ATA   ] [Secondary Slave ] IDENTIFY did not enter the data phase (status 0x00, erro.
+[SERIAL] [ NT | kernel/src/kernel.c:312                  ] [KERNEL] Initialize EXT2 filesystem...
+[SERIAL] [ NT | kernel/src/kernel.c:320                  ] [KERNEL] Mount EXT2 filesystem...
+[SERIAL] [ NT | kernel/src/kernel.c:328                  ] [KERNEL] Initialize Filesystem Hierarchy Standard directories...
+[TEST]   1..90
+[SERIAL] [ NT | kernel/src/kernel.c:343                  ] [KERNEL]     Initialize memory devices...
+[SERIAL] [ NT | kernel/src/kernel.c:352                  ] [KERNEL]     Initialize 'procfs'...
+[SERIAL] [ NT | kernel/src/kernel.c:361                  ] [KERNEL]     Mounting 'procfs'...
+[SERIAL] [ NT | kernel/src/kernel.c:369                  ] [KERNEL] Initialize video procfs file...
+[SERIAL] [ NT | kernel/src/kernel.c:378                  ] [KERNEL] Initialize system procfs file...
+[SERIAL] [ NT | kernel/src/kernel.c:387                  ] [KERNEL] Initialize IPC information system...
+[SERIAL] [ NT | kernel/src/kernel.c:405                  ] [KERNEL] Initialize IPC/SEM system...
+[SERIAL] [ NT | kernel/src/kernel.c:414                  ] [KERNEL] Initialize IPC/MSQ system...
+[SERIAL] [ NT | kernel/src/kernel.c:423                  ] [KERNEL] Initialize IPC/SHM system...
+[SERIAL] [ NT | kernel/src/kernel.c:437                  ] [KERNEL] Setting up PS/2 driver...
+[SERIAL] [ NT | kernel/src/kernel.c:449                  ] [KERNEL] Setting up keyboard driver...
+[SERIAL] [ NT | kernel/src/kernel.c:476                  ] [KERNEL] Initialize the scheduler.
+[SERIAL] [ NT | kernel/src/kernel.c:482                  ] [KERNEL] Init process management...
+[SERIAL] [ NT | kernel/src/kernel.c:522                  ] [KERNEL] Creating runtests process...
+[SERIAL] [ NT | kernel/src/kernel.c:539                  ] [KERNEL] Initialize floating point unit...
+[SERIAL] [ NT | kernel/src/kernel.c:548                  ] [KERNEL] Initialize signals...
+[SERIAL] [ NT | kernel/src/kernel.c:557                  ] [KERNEL] Booting done, jumping into init process.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 1/90): t_aab_pipe
+[TEST]   ok  1 - t_aab_pipe
+[TEST]   ok  2 - t_abort
+[SERIAL] [ DF | userspace/tests/t_aab_pipe.c:26          ] [SYSLOG] t_aab_pipe: [3] exhausted fds after 12 opens (errno=24)
+[SERIAL] [ ER | kernel/src/fs/pipe.c:1144                ] [PIPE  ] Failed to allocate file descriptor.
+[SERIAL] [ ER | kernel/src/fs/pipe.c:1144                ] [PIPE  ] Failed to allocate file descriptor.
+[SERIAL] [ ER | kernel/src/fs/pipe.c:1247                ] [PIPE  ] Failed to create file descriptors.
+[SERIAL] [ DF | userspace/tests/t_aab_pipe.c:35          ] [SYSLOG] t_aab_pipe: [3] pipe() returned -1 (fds: -1, -1)
+[SERIAL] [ DF | userspace/tests/t_aab_pipe.c:74          ] [SYSLOG] t_aab_pipe: [3] [t_aab_pipe] all checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 2/90): t_abort
+[SERIAL] [ DF | userspace/tests/t_abort.c:21             ] [SYSLOG] [t_abort] handler(6) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_abort.c:26             ] [SYSLOG] [t_abort] handler(6) : Correct signal. ABRT (1/3)
+[SERIAL] [ DF | userspace/tests/t_abort.c:21             ] [SYSLOG] [t_abort] handler(6) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_abort.c:26             ] [SYSLOG] [t_abort] handler(6) : Correct signal. ABRT (2/3)
+[SERIAL] [ DF | userspace/tests/t_abort.c:21             ] [SYSLOG] [t_abort] handler(6) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_abort.c:26             ] [SYSLOG] [t_abort] handler(6) : Correct signal. ABRT (3/3)
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 3/90): t_alarm
+[TEST]   ok  3 - t_alarm
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 1.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 1.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 4/90): t_chdir
+[SERIAL] [ DF | userspace/tests/t_chdir.c:25             ] [SYSLOG] [t_chdir] Successfully changed to the directory.
+[TEST]   ok  4 - t_chdir
+[TEST]   ok  5 - t_creat
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 5/90): t_creat
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 6/90): t_creat_errno
+[SERIAL] [ ER | kernel/src/fs/vfs.c:779                  ] [VFS   ] vfs_creat(/): Cannot create the given file (Is a directory)!
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/home/user/t_creat_errno.d', flags: 1, mode: 0): The file .
+[SERIAL] [ ER | kernel/src/fs/vfs.c:779                  ] [VFS   ] vfs_creat(/home/user/t_creat_errno.d/file): Cannot create the given file (N!
+[TEST]   ok  6 - t_creat_errno
+[TEST]   ok  7 - t_nice
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:83        ] [EXT2  ] ext2_creat(path: `/home/user/t_creat_errno.d`): The entry `t_creat_errno.d`.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:779                  ] [VFS   ] vfs_creat(/home/user/t_creat_errno.d): Cannot create the given file (Is a d!
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:83        ] [EXT2  ] ext2_creat(path: `/home/user/t_creat_errno.d`): The entry `t_creat_errno.d`.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:779                  ] [VFS   ] vfs_creat(/home/user/t_creat_errno.d/.): Cannot create the given file (Is a!
+[SERIAL] [ DF | userspace/tests/t_creat_errno.c:225      ] [SYSLOG] [t_creat_errno] every failed creation reported its own reason
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 7/90): t_nice
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 8/90): t_dir_block_boundary
+[SERIAL] [ DF | userspace/tests/t_dir_block_boundary.c:305 ] [SYSLOG] [t_dir_block_boundary] both block boundaries kept their entries and theirs
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test ( 9/90): t_dir_entries
+[TEST]   ok  8 - t_dir_block_boundary
+[TEST]   ok  9 - t_dir_entries
+[TEST]   ok 10 - t_dup
+[SERIAL] [ DF | userspace/tests/t_dir_entries.c:158      ] [SYSLOG] [t_dir_entries] the directory kept all 400 entries across its blocks
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (10/90): t_dup
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (11/90): t_environ
+[TEST]   ok 11 - t_environ
+[TEST]   ok 12 - t_exec
+[SERIAL] [ DF | userspace/tests/t_environ.c:62           ] [SYSLOG] [t_environ] Environment variable TEST_ENV tested successfully.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (12/90): t_exec
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (13/90): t_execve_bounds
+[TEST]   ok 13 - t_execve_bounds
+[SERIAL] [ ER | kernel/src/process/process.c:779         ] [PROC  ] sys_execve failed: filename is longer than PATH_MAX.
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ DF | userspace/tests/t_execve_bounds.c:251    ] [SYSLOG] [t_execve_bounds] all execve string-bound checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (14/90): t_execve_bigargv
+[SERIAL] [ ER | kernel/src/process/exec_args.c:251       ] [EXECARG] argv is unreadable, or has too many entries.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[TEST]   ok 14 - t_execve_bigargv
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:269       ] [EXECARG] envp is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ DF | userspace/tests/t_execve_bigargv.c:233   ] [SYSLOG] [t_execve_bigargv] all argv/envp bound checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (15/90): t_userfault
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 36 (eip: 0xa6e20275, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 37 (eip: 0xa6e2028f, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 38 (eip: 0xa6e202cb, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 39 (eip: 0xa6e202db, address: 0x.
+[TEST]   ok 15 - t_userfault
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 40 (eip: 0xa6e202bc, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 41 (eip: 0xa6e20275, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 42 (eip: 0xa6e202cb, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 43 (eip: 0xa6e20275, address: 0x.
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:198          ] [PG_FLT] pid 43 keeps faulting at 0x00000000: further SIGSEGV deliveries for it are .
+[SERIAL] [ DF | userspace/tests/t_userfault.c:255        ] [SYSLOG] [t_userfault] all user-mode fault checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (16/90): t_path_bounds
+[TEST]   ok 16 - t_path_bounds
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/home/user/t_path_bounds.d/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:746                  ] [VFS   ] vfs_creat(/home/user/t_path_bounds.d/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:746                  ] [VFS   ] vfs_creat(/home/user/t_path_bounds.d/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+[SERIAL] [ DF | userspace/tests/t_path_bounds.c:279      ] [SYSLOG] [t_path_bounds] all path boundary checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (17/90): t_execve_fail
+[SERIAL] [ ER | kernel/src/process/process.c:744         ] [PROC  ] Received NULL filename.
+[SERIAL] [ ER | kernel/src/process/process.c:753         ] [PROC  ] sys_execve failed: must provide argv.
+[SERIAL] [ ER | kernel/src/process/process.c:763         ] [PROC  ] sys_execve failed: must provide the name.
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/no/such/file', flags: 0, mode: 0): The file does not exis.
+[SERIAL] [ ER | kernel/src/process/process.c:213         ] [PROC  ] Cannot find executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:224         ] [PROC  ] This is not executable `/home/user/t_execve_fail.txt`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:304                 ] [ELF   ] PT_LOAD segment 0 extends past the end of the file.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_execve_fail.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ DF | userspace/tests/t_execve_fail.c:269      ] [SYSLOG] [t_execve_fail] process survived the failed execve
+[TEST]   ok 17 - t_execve_fail
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (18/90): t_elf_short
+[SERIAL] [ CR | kernel/src/mem/page_fault.c:325          ] [PG_FLT] ERR(0): Page directory entry not present (100)
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 48 (eip: 0x08048000, address: 0x.
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ CR | kernel/src/mem/page_fault.c:325          ] [PG_FLT] ERR(0): Page directory entry not present (100)
+[SERIAL] [ ER | kernel/src/mem/page_fault.c:193          ] [PG_FLT] User-mode fault: delivering SIGSEGV to pid 56 (eip: 0x08048000, address: 0x.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (19/90): t_elf_malformed
+[TEST]   ok 18 - t_elf_short
+[SERIAL] [ ER | kernel/src/elf/elf.c:408                 ] [ELF   ] Elf file has an invalid program header table.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:408                 ] [ELF   ] Elf file has an invalid program header table.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:408                 ] [ELF   ] Elf file has an invalid program header table.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:296                 ] [ELF   ] PT_LOAD segment 0 has zero memory size.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:300                 ] [ELF   ] PT_LOAD segment 0 has filesz larger than memsz.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:304                 ] [ELF   ] PT_LOAD segment 0 extends past the end of the file.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:309                 ] [ELF   ] PT_LOAD segment 0 has an invalid virtual address range.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:309                 ] [ELF   ] PT_LOAD segment 0 has an invalid virtual address range.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:309                 ] [ELF   ] PT_LOAD segment 0 has an invalid virtual address range.
+[SERIAL] [ ER | kernel/src/elf/elf.c:413                 ] [ELF   ] Failed to load the executable.
+[SERIAL] [ ER | kernel/src/process/process.c:313         ] [PROC  ] Failed to load ELF file `/home/user/t_elf_malformed.elf`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ DF | userspace/tests/t_elf_malformed.c:190    ] [SYSLOG] [t_elf_malformed] checked 9 malformed program-header cases
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (20/90): t_exit
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (21/90): t_fflush
+[SERIAL] [ DF | userspace/tests/t_fflush.c:15            ] [SYSLOG] [t_fflush] Testing fflush with stdout...
+[SERIAL] [ DF | userspace/tests/t_fflush.c:17            ] [SYSLOG] [t_fflush]  SUCCESS
+[SERIAL] [ DF | userspace/tests/t_fflush.c:24            ] [SYSLOG] [t_fflush] Testing fflush with stderr...
+[SERIAL] [ DF | userspace/tests/t_fflush.c:26            ] [SYSLOG] [t_fflush]  SUCCESS
+[SERIAL] [ DF | userspace/tests/t_fflush.c:33            ] [SYSLOG] [t_fflush] Testing fflush with -1 (all streams)...
+[SERIAL] [ DF | userspace/tests/t_fflush.c:35            ] [SYSLOG] [t_fflush]  SUCCESS
+[TEST]   ok 19 - t_elf_malformed
+[TEST]   ok 20 - t_exit
+[TEST]   ok 21 - t_fflush
+[SERIAL] [ DF | userspace/tests/t_fflush.c:50            ] [SYSLOG] [t_fflush] Testing fflush with file descriptor...
+[SERIAL] [ DF | userspace/tests/t_fflush.c:52            ] [SYSLOG] [t_fflush]  SUCCESS
+[SERIAL] [ DF | userspace/tests/t_fflush.c:64            ] [SYSLOG] [t_fflush] All fflush tests passed!
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (22/90): t_file_blocks
+[TEST]   ok 22 - t_file_blocks
+[TEST]   ok 23 - t_fhs
+[SERIAL] [ DF | userspace/tests/t_file_blocks.c:202      ] [SYSLOG] [t_file_blocks] every block read back what was written
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (23/90): t_fhs
+[SERIAL] [ DF | userspace/tests/t_fhs.c:47               ] [SYSLOG] [t_fhs] === Filesystem Hierarchy Standard (FHS) Verification ===
+[SERIAL] [ DF | userspace/tests/t_fhs.c:47               ] [SYSLOG]
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /tmp (Temporary files directory) - Mode: 01777
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /home (User home directories) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /root (Root home directory) - Mode: 0700
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /var (Variable data) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /var/tmp (Temporary variable data) - Mode: 01777
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /var/log (Log files) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /usr (User programs and data) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /usr/bin (User executable programs) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /usr/lib (User libraries) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /usr/share (User data) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /bin (Essential executable programs) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /lib (Essential system libraries) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /sbin (System administration programs) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /etc (System configuration) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /dev (Device files) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /mnt (Temporary mount points) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:65               ] [SYSLOG] [t_fhs] [PASS] /media (Removable media mount points) - Mode: 0755
+[SERIAL] [ DF | userspace/tests/t_fhs.c:86               ] [SYSLOG] [t_fhs]
+[SERIAL] [ DF | userspace/tests/t_fhs.c:86               ] [SYSLOG] === Test Summary ===
+[SERIAL] [ DF | userspace/tests/t_fhs.c:87               ] [SYSLOG] [t_fhs] Total:  17
+[SERIAL] [ DF | userspace/tests/t_fhs.c:88               ] [SYSLOG] [t_fhs] Passed: 17
+[SERIAL] [ DF | userspace/tests/t_fhs.c:89               ] [SYSLOG] [t_fhs] Failed: 0
+[SERIAL] [ DF | userspace/tests/t_fhs.c:92               ] [SYSLOG] [t_fhs]
+[SERIAL] [ DF | userspace/tests/t_fhs.c:92               ] [SYSLOG] ✓ All FHS directories verified successfully!
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (24/90): t_file_blocks_free
+[TEST]   ok 24 - t_file_blocks_free
+[SERIAL] [ DF | userspace/tests/t_file_blocks_free.c:109 ] [SYSLOG] [t_file_blocks_free] the 22 blocks of the file came back, index blocks incld
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (25/90): t_trunc_content
+[TEST]   ok 25 - t_trunc_content
+[SERIAL] [ DF | userspace/tests/t_trunc_content.c:249    ] [SYSLOG] [t_trunc_content] truncating 12388 bytes left an empty file and returned 4 s
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (26/90): t_write_aligned
+[TEST]   ok 26 - t_write_aligned
+[TEST]   ok 27 - t_font
+[SERIAL] [ DF | userspace/tests/t_write_aligned.c:181    ] [SYSLOG] [t_write_aligned] 8 whole blocks took exactly 8 blocks
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (27/90): t_font
+[SERIAL] [ DF | userspace/tests/t_font.c:70              ] [SYSLOG] [t_font] console font requests accepted and the console survived.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (28/90): t_fork
+[SERIAL] [ DF | userspace/tests/t_fork.c:41              ] [SYSLOG] [t_fork] Parent process: PID = 75, Child PID = 76
+[SERIAL] [ DF | userspace/tests/t_fork.c:34              ] [SYSLOG] [t_fork] Child process: PID = 76, Parent PID = 75
+[TEST]   ok 28 - t_fork
+[TEST]   ok 29 - t_getcwd
+[SERIAL] [ DF | userspace/tests/t_fork.c:37              ] [SYSLOG] [t_fork] Child process exiting successfully.
+[SERIAL] [ DF | userspace/tests/t_fork.c:52              ] [SYSLOG] [t_fork] Parent process: Child exited with status 0.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (29/90): t_getcwd
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (30/90): t_gid
+[TEST]   ok 30 - t_gid
+[SERIAL] [ DF | userspace/tests/t_gid.c:36               ] [SYSLOG] [t_gid] List of all groups:
+[SERIAL] [ DF | userspace/tests/t_gid.c:23               ] [SYSLOG] [t_gid] Group name:         root , passwd:            x
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] user
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] root
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] marco
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/tests/t_gid.c:23               ] [SYSLOG] [t_gid] Group name:         user , passwd:            x
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] banana
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] marco
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/tests/t_gid.c:43               ] [SYSLOG] [t_gid] List all groups again:
+[SERIAL] [ DF | userspace/tests/t_gid.c:23               ] [SYSLOG] [t_gid] Group name:         root , passwd:            x
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] user
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] root
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] marco
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/tests/t_gid.c:23               ] [SYSLOG] [t_gid] Group name:         user , passwd:            x
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] banana
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid] marco
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/tests/t_gid.c:27               ] [SYSLOG] [t_gid]
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (31/90): t_groups
+[TEST]   ok 31 - t_groups
+[SERIAL] [ DF | userspace/tests/t_groups.c:27            ] [SYSLOG] [t_groups] pid: 79, gid: 0, sid: 0
+[SERIAL] [ DF | userspace/tests/t_groups.c:27            ] [SYSLOG]
+[SERIAL] [ DF | userspace/tests/t_groups.c:43            ] [SYSLOG] [t_groups] 0) pid_child: 80, gid_child: 0, ppid_child: 79, sid_child: 0
+[SERIAL] [ DF | userspace/tests/t_groups.c:43            ] [SYSLOG] [t_groups] 1) pid_child: 81, gid_child: 0, ppid_child: 79, sid_child: 0
+[SERIAL] [ DF | userspace/tests/t_groups.c:43            ] [SYSLOG] [t_groups] 2) pid_child: 82, gid_child: 0, ppid_child: 79, sid_child: 0
+[SERIAL] [ DF | userspace/tests/t_groups.c:43            ] [SYSLOG] [t_groups] 3) pid_child: 83, gid_child: 0, ppid_child: 79, sid_child: 0
+[SERIAL] [ DF | userspace/tests/t_groups.c:43            ] [SYSLOG] [t_groups] 4) pid_child: 84, gid_child: 0, ppid_child: 79, sid_child: 0
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (32/90): t_grp
+[TEST]   ok 32 - t_grp
+[TEST]   ok 33 - t_hashmap
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (33/90): t_hashmap
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (34/90): t_itimer
+[SERIAL] [ DF | userspace/tests/t_itimer.c:67            ] [SYSLOG] [t_itimer] Timer event 1 fired at 0 seconds since start
+[SERIAL] [ DF | userspace/tests/t_itimer.c:67            ] [SYSLOG] [t_itimer] Timer event 2 fired at 0 seconds since start
+[SERIAL] [ DF | userspace/tests/t_itimer.c:67            ] [SYSLOG] [t_itimer] Timer event 3 fired at 0 seconds since start
+[SERIAL] [ DF | userspace/tests/t_itimer.c:67            ] [SYSLOG] [t_itimer] Timer event 4 fired at 0 seconds since start
+[TEST]   ok 34 - t_itimer
+[SERIAL] [ DF | userspace/tests/t_itimer.c:67            ] [SYSLOG] [t_itimer] Timer event 5 fired at 0 seconds since start
+[SERIAL] [ DF | userspace/tests/t_itimer.c:81            ] [SYSLOG] [t_itimer] Test completed: Timer fired 5 times
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (35/90): t_kill
+[SERIAL] [ DF | userspace/tests/t_kill.c:32              ] [SYSLOG] [t_kill] main : Creating child!
+[SERIAL] [ DF | userspace/tests/t_kill.c:67              ] [SYSLOG] [t_kill] I'm the parent (pid: 88)!
+[SERIAL] [ DF | userspace/tests/t_kill.c:40              ] [SYSLOG] [t_kill] I'm the child (pid: 89)!
+[SERIAL] [ DF | userspace/tests/t_kill.c:47              ] [SYSLOG] [t_kill] Setting up signal handler for SIGUSR1 in child (pid: 89)...
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[SERIAL] [ DF | userspace/tests/t_kill.c:75              ] [SYSLOG] [t_kill] Sending SIGUSR1 to child (pid: 89)!
+[SERIAL] [ DF | userspace/tests/t_kill.c:26              ] [SYSLOG] [t_kill] handler(sig: 16) : Starting handler (pid: 89).
+[SERIAL] [ DF | userspace/tests/t_kill.c:27              ] [SYSLOG] [t_kill] handler(sig: 16) : Ending handler (pid: 89).
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[SERIAL] [ DF | userspace/tests/t_kill.c:60              ] [SYSLOG] [t_kill] I'm the child (pid: 89): I'm waiting...
+[TEST]   ok 35 - t_kill
+[TEST]   ok 36 - t_kill_perm
+[SERIAL] [ DF | userspace/tests/t_kill.c:97              ] [SYSLOG] [t_kill] main : Child has terminated. End of parent process.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (36/90): t_kill_perm
+[SERIAL] [ DF | userspace/tests/t_kill_perm.c:50         ] [SYSLOG] [t_kill_perm] kill() permission rule enforced.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (37/90): t_list
+[TEST]   ok 37 - t_list
+[TEST]   ok 38 - t_mem
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (38/90): t_mem
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (39/90): t_mkdir
+[TEST]   ok 39 - t_mkdir
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (40/90): t_syslog_format
+[TEST]   ok 40 - t_syslog_format
+[TEST]   ok 41 - t_printf_length
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:38     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] literal percent-n: %n
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:39     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] literal percent-s: %s
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:40     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] several: %n %s %p %x
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:41     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] wide: %99999999d
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:42     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] trailing percent: %
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:47     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] from an argument: %n%n%n%s%s%s
+[SERIAL] [ DF | userspace/tests/t_syslog_format.c:51     ] [SYSLOG] t_syslog_format: [95] [t_syslog_format] the kernel treated every message ast
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (41/90): t_printf_length
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:52     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %lld over 32 bits: `5000000000`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:53     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %lld negative over 32 bits: `-90000`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:54     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %llu max: `18446744073709551615`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:55     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %llx over 32 bits: `deadbeefcafe`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:60     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %lld then %d: `1 then 42`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:61     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %d then %lld then %d: `7 then 50000`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:62     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %llu then %s: `18446744073709551615`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:65     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %08lld: `00001234`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:66     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %-8lld|: `1234    |`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:67     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %+lld: `+5000000000`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:70     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %zu: `4`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:71     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %zd negative: `-7`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:72     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %zx: `ff`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:75     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %lu: `1234567890`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:76     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %ld negative: `-1234567890`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:80     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %hd wraps: `4464`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:81     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %hhd wraps: `44`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:82     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %hhu wraps: `44`
+[SERIAL] [ DF | userspace/tests/t_printf_length.c:83     ] [SYSLOG] t_printf_length: [96] [t_printf_length] %hx: `beef`
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (42/90): t_rmdir_dotfiles
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_dir.c:579        ] [EXT2  ] Directory `247` is not empty.
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_dir.c:579        ] [EXT2  ] Directory `247` is not empty.
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_dir.c:579        ] [EXT2  ] Directory `247` is not empty.
+[TEST]   ok 42 - t_rmdir_dotfiles
+[TEST]   ok 43 - t_stdint
+[TEST]   ok 44 - t_mount_boundary
+[SERIAL] [ DF | userspace/tests/t_rmdir_dotfiles.c:141   ] [SYSLOG] [t_rmdir_dotfiles] rmdir refuses a directory that still holds any file
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (43/90): t_stdint
+[SERIAL] [ DF | userspace/tests/t_stdint.c:105           ] [SYSLOG] [t_stdint] the integer types are the widths they are named for
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (44/90): t_mount_boundary
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/dev/nullx', flags: 0, mode: 0): The file does not exist.
+[SERIAL] [ DF | userspace/tests/t_mount_boundary.c:157   ] [SYSLOG] [t_mount_boundary] mount points claim only the paths inside them
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (45/90): t_name_max
+[TEST]   ok 45 - t_name_max
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:746                  ] [VFS   ] vfs_creat(/home/user/nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:746                  ] [VFS   ] vfs_creat(/home/user/nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
+[SERIAL] [ ER | kernel/src/fs/namei.c:303                ] [NAMEI ] Path component too long while resolving a path.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:686                  ] [VFS   ] vfs_mkdir(/home/user/nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
+[SERIAL] [ DF | userspace/tests/t_name_max.c:254         ] [SYSLOG] [t_name_max] names up to 254 characters work, longer ones are refused
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (46/90): t_msgget
+[TEST]   ok 46 - t_msgget
+[TEST]   ok 47 - t_ndtree
+[SERIAL] [ DF | userspace/tests/t_msgget.c:84            ] [SYSLOG] [t_msgget] Generated key using ftok (key = 83886082)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:93            ] [SYSLOG] [t_msgget] Created message queue (id : 1)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [101] Message sent ( 1) `Hello there!`
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 1) `Hello there!` (Query:  1)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 1) `General Kenobi...` (Query:  1)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [102] Message sent ( 1) `General Kenobi...`
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [101] Message sent ( 7) `course, `
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [101] Message sent ( 9) `cheers!`
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [101] Message sent ( 1) `From the operating`
+[SERIAL] [ DF | userspace/tests/t_msgget.c:47            ] [SYSLOG] [t_msgget] [101] Message sent ( 3) `systems`
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 1) `From the operating` (Query:  1)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 3) `systems` (Query: -8)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 7) `course, ` (Query: -8)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:63            ] [SYSLOG] [t_msgget] [101] Message received ( 9) `cheers!` (Query:  0)
+[SERIAL] [ DF | userspace/tests/t_msgget.c:133           ] [SYSLOG] [t_msgget] Correctly removed message queue.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (47/90): t_ndtree
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 1
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 2
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 5
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 6
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 3
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 7
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 8
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 4
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 9
+[SERIAL] [ DF | userspace/tests/t_ndtree.c:30            ] [SYSLOG] [t_ndtree] Node value: 10
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (48/90): t_periodic1
+[TEST]   ok 48 - t_periodic1
+[TEST]   ok 49 - t_pipe_eof_data
+[TEST]   ok 50 - t_proc_feedback
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (49/90): t_pipe_eof_data
+[SERIAL] [ DF | userspace/tests/t_pipe_eof_data.c:49     ] [SYSLOG] [t_pipe_eof_data] drained queued data after the last writer closed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (50/90): t_proc_feedback
+[SERIAL] [ ER | kernel/src/fs/namei.c:258                ] [NAMEI ] Cannot tell whether `/proc/feedback` is a symbolic link (-1).
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/proc/feedback): Cannot resolve path!
+[SERIAL] [ DF | userspace/tests/t_proc_feedback.c:38     ] [SYSLOG] [t_proc_feedback] /proc/feedback is absent: built without ENABLE_SCHEDULER_o
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (51/90): t_procfs_read
+[TEST]   ok 51 - t_procfs_read
+[TEST]   ok 52 - t_periodic2
+[SERIAL] [ DF | userspace/tests/t_procfs_read.c:392      ] [SYSLOG] [t_procfs_read] all procfs read boundary checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (52/90): t_periodic2
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (53/90): t_periodic3
+[TEST]   ok 53 - t_periodic3
+[TEST]   ok 54 - t_pipe_blocking
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (54/90): t_pipe_blocking
+[SERIAL] [ DF | userspace/tests/t_pipe_blocking.c:42     ] [SYSLOG] [t_pipe_blocking] Child waiting to read from pipe...
+[SERIAL] [ DF | userspace/tests/t_pipe_blocking.c:64     ] [SYSLOG] [t_pipe_blocking] Parent writing to pipe...
+[SERIAL] [ DF | userspace/tests/t_pipe_blocking.c:46     ] [SYSLOG] [t_pipe_blocking] Child read message: 'Blocking test message' (22 bytes)
+[SERIAL] [ DF | userspace/tests/t_pipe_blocking.c:68     ] [SYSLOG] [t_pipe_blocking] Parent wrote message: 'Blocking test message' (22 bytes)
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (55/90): t_resumable_context
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 0: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 0: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 0: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 0: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 1: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 1: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 1: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 1: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 2: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 2: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 2: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 2: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 3: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 3: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 3: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 3: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 4: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 4: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 4: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 4: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 5: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 5: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 5: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 5: waitpid resumed
+[TEST]   ok 55 - t_resumable_context
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 6: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 6: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 6: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 6: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:50 ] [SYSLOG] [t_resumable_context] cycle 7: read blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:56 ] [SYSLOG] [t_resumable_context] cycle 7: read resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:89 ] [SYSLOG] [t_resumable_context] cycle 7: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:92 ] [SYSLOG] [t_resumable_context] cycle 7: waitpid resumed
+[SERIAL] [ DF | userspace/tests/t_resumable_context.c:105 ] [SYSLOG] [t_resumable_context] all continuation phases passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (56/90): t_resumable_timer_irq
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:54 ] [SYSLOG] [t_resumable_timer_irq] cycle 0: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:58 ] [SYSLOG] [t_resumable_timer_irq] cycle 0: timer wakeup resumed waitpid
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:54 ] [SYSLOG] [t_resumable_timer_irq] cycle 1: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:58 ] [SYSLOG] [t_resumable_timer_irq] cycle 1: timer wakeup resumed waitpid
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:54 ] [SYSLOG] [t_resumable_timer_irq] cycle 2: waitpid blocks
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:58 ] [SYSLOG] [t_resumable_timer_irq] cycle 2: timer wakeup resumed waitpid
+[TEST]   ok 56 - t_resumable_timer_irq
+[TEST]   ok 57 - t_resumable_timer_fanout
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_irq.c:112 ] [SYSLOG] [t_resumable_timer_irq] timer IRQ and pipe wakeup checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (57/90): t_resumable_timer_fanout
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_fanout.c:53 ] [SYSLOG] [t_resumable_timer_fanout] waiting for child 0
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_fanout.c:53 ] [SYSLOG] [t_resumable_timer_fanout] waiting for child 1
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_fanout.c:53 ] [SYSLOG] [t_resumable_timer_fanout] waiting for child 2
+[SERIAL] [ DF | userspace/tests/t_resumable_timer_fanout.c:66 ] [SYSLOG] [t_resumable_timer_fanout] all timer wakeups passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (58/90): t_fpu_context
+[TEST]   ok 58 - t_fpu_context
+[SERIAL] [ DF | userspace/tests/t_fpu_context.c:96       ] [SYSLOG] [t_fpu_context] x87 state survived blocked reads
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (59/90): t_resumable_signals
+[TEST]   ok 59 - t_resumable_signals
+[SERIAL] [ DF | userspace/tests/t_resumable_signals.c:184 ] [SYSLOG] [t_resumable_signals] all signal/pipe continuation checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (60/90): t_pipe_non_blocking
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:54 ] [SYSLOG] [t_pipe_non_blocking] Child waiting to read from pipe...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:82 ] [SYSLOG] [t_pipe_non_blocking] Parent writing to pipe...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:86 ] [SYSLOG] [t_pipe_non_blocking] Parent wrote message: 'Blocking test message' (22 byt)
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:58 ] [SYSLOG] [t_pipe_non_blocking] Child read message: 'Blocking test message' (22 bytes)
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[TEST]   ok 60 - t_pipe_non_blocking
+[TEST]   ok 61 - t_pwd
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/tests/t_pipe_non_blocking.c:65 ] [SYSLOG] [t_pipe_non_blocking] Child has nothing to read...
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (61/90): t_pwd
+[SERIAL] [ DF | userspace/tests/t_pwd.c:36               ] [SYSLOG] [t_pwd] Password entry for root user found.
+[SERIAL] [ DF | userspace/tests/t_pwd.c:57               ] [SYSLOG] [t_pwd] Password entry for UID 0 (root) found.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (62/90): t_schedfb
+[SERIAL] [ DF | userspace/tests/t_schedfb.c:23           ] [SYSLOG] [t_schedfb] First test: The child processes will sleep, so they will not be.
+[TEST]   ok 62 - t_schedfb
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 1.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:21             ] [SYSLOG] [t_alarm] handler(14) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:30             ] [SYSLOG] [t_alarm] handler(14) : alarm(1) result: 0.
+[SERIAL] [ DF | userspace/tests/t_alarm.c:40             ] [SYSLOG] [t_alarm] handler(14) : alarm(0) result: 1.
+[SERIAL] [ DF | userspace/tests/t_schedfb.c:60           ] [SYSLOG] [t_schedfb] All child processes have completed.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (63/90): t_semflg
+[TEST]   ok 63 - t_semflg
+[SERIAL] [ DF | userspace/tests/t_semflg.c:37            ] [SYSLOG] [t_semflg] [parent] Created semaphore set (semid: 1)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:47            ] [SYSLOG] [t_semflg] [parent] Set semaphore value to 1 (semid: 1)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:56            ] [SYSLOG] [t_semflg] [parent] Semaphore value is 1 (expected: 1)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:100           ] [SYSLOG] [t_semflg] [parent] Successfully performed semaphore operations (semid: 1)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:76            ] [SYSLOG] [t_semflg] [child] Successfully incremented semaphore (semid: 1)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:109           ] [SYSLOG] [t_semflg] [parent] Semaphore value is 0 (expected: 0)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:84            ] [SYSLOG] [t_semflg] [child] Semaphore value is 0 (expected: 2)
+[SERIAL] [ DF | userspace/tests/t_semflg.c:85            ] [SYSLOG] [t_semflg] [child] Exiting now.
+[SERIAL] [ DF | userspace/tests/t_semflg.c:118           ] [SYSLOG] [t_semflg] [parent] Successfully removed semaphore set (semid: 1)
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (64/90): t_semget
+[SERIAL] [ DF | userspace/tests/t_semget.c:37            ] [SYSLOG] [t_semget] [t_semget] Generated key using ftok (key = 83886082)
+[SERIAL] [ DF | userspace/tests/t_semget.c:46            ] [SYSLOG] [t_semget] [t_semget][father] Created semaphore set (id : 2)
+[SERIAL] [ DF | userspace/tests/t_semget.c:56            ] [SYSLOG] [t_semget] [t_semget][father] Set semaphore value to 1 (id : 2)
+[SERIAL] [ DF | userspace/tests/t_semget.c:65            ] [SYSLOG] [t_semget] [t_semget][father] Semaphore value is 1 (expected: 1)
+[SERIAL] [ DF | userspace/tests/t_semget.c:138           ] [SYSLOG] [t_semget] [t_semget][father] Performed semaphore operations (id: 2)
+[SERIAL] [ DF | userspace/tests/t_semget.c:150           ] [SYSLOG] [t_semget] [t_semget][father] Semaphore value is 65534 (expected: 0)
+[SERIAL] [ DF | userspace/tests/t_semget.c:84            ] [SYSLOG] [t_semget] [t_semget][child] Performed first semaphore operation (id: 2)
+[SERIAL] [ DF | userspace/tests/t_semget.c:92            ] [SYSLOG] [t_semget] [t_semget][child] Semaphore value after first increment is 65535)
+[TEST]   ok 64 - t_semget
+[TEST]   ok 65 - t_semop
+[SERIAL] [ ER | userspace/tests/t_semget.c:97            ] [SYSLOG] [t_semget] [t_semget][child] Failed to perform second child semaphore operae
+[SERIAL] [ DF | userspace/tests/t_semget.c:170           ] [SYSLOG] [t_semget] [t_semget][father] Removed semaphore set (id: 2)
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (65/90): t_semop
+[SERIAL] [ DF | userspace/tests/t_semop.c:103            ] [SYSLOG] [t_semop] From the operating
+[SERIAL] [ DF | userspace/tests/t_semop.c:96             ] [SYSLOG] [t_semop] systems
+[SERIAL] [ DF | userspace/tests/t_semop.c:88             ] [SYSLOG] [t_semop] course,
+[SERIAL] [ DF | userspace/tests/t_semop.c:81             ] [SYSLOG] [t_semop] cheers!
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (66/90): t_ipc_lifetime
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:418                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ WR | kernel/src/mem/alloc/slab.c:788          ] [SLAB  ] Attempt to free NULL pointer at kernel/src/ipc/msg.c:419
+[SERIAL] [ ER | kernel/src/ipc/msg.c:496                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/sem.c:387                 ] [IPCsem] The semaphore set doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:382                 ] [IPCshm] No shared memory exists for the given id and the flags did not specify IPC_.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:426                 ] [IPCmsg] The message queue exists for the given key, but the calling process does no.
+[SERIAL] [ WR | kernel/src/mem/alloc/slab.c:788          ] [SLAB  ] Attempt to free NULL pointer at kernel/src/ipc/msg.c:466
+[SERIAL] [ ER | kernel/src/ipc/msg.c:502                 ] [IPCmsg] The message queue exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:670                 ] [IPCmsg] The calling process does not have read permission to access the queue.
+[SERIAL] [ ER | kernel/src/ipc/sem.c:399                 ] [IPCsem] The semaphore set exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/sem.c:592                 ] [IPCsem] The calling process does not have read permission to access the set.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:398                 ] [IPCshm] The shared memory exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:426                 ] [IPCmsg] The message queue exists for the given key, but the calling process does no.
+[SERIAL] [ WR | kernel/src/mem/alloc/slab.c:788          ] [SLAB  ] Attempt to free NULL pointer at kernel/src/ipc/msg.c:466
+[SERIAL] [ ER | kernel/src/ipc/msg.c:502                 ] [IPCmsg] The message queue exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/sem.c:399                 ] [IPCsem] The semaphore set exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/sem.c:399                 ] [IPCsem] The semaphore set exists for the given key, but the calling process does no.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:385                 ] [IPCmsg] The value of msgsz is above the maximum allowed size.
+[SERIAL] [ DF | userspace/tests/t_ipc_lifetime.c:371     ] [SYSLOG] t_ipc_lifetime: [171] [t_ipc_lifetime] lifetime checks passed
+[TEST]   ok 66 - t_ipc_lifetime
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (67/90): t_ipc_key_race
+[TEST]   ok 67 - t_ipc_key_race
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/msg.c:622                 ] [IPCmsg] The message queue does not exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ ER | kernel/src/ipc/shm.c:462                 ] [IPCshm] The shared memory doesn't exist.
+[SERIAL] [ DF | userspace/tests/t_ipc_key_race.c:293     ] [SYSLOG] t_ipc_key_race: [176] [t_ipc_key_race] key race checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (68/90): t_shm
+[TEST]   ok 68 - t_shm
+[TEST]   ok 69 - t_shmget
+[TEST]   ok 70 - t_sigaction
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (69/90): t_shmget
+[SERIAL] [ DF | userspace/tests/t_shmget.c:33            ] [SYSLOG] [t_shmget] shmid = 7;
+[SERIAL] [ DF | userspace/tests/t_shmget.c:44            ] [SYSLOG] [t_shmget] C: 0x8047000
+[SERIAL] [ DF | userspace/tests/t_shmget.c:60            ] [SYSLOG] [t_shmget] F: 0xbfeff000
+[SERIAL] [ DF | userspace/tests/t_shmget.c:63            ] [SYSLOG] [t_shmget] array[0] : 1
+[SERIAL] [ DF | userspace/tests/t_shmget.c:64            ] [SYSLOG] [t_shmget] array[1] : 2
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (70/90): t_sigaction
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:61         ] [SYSLOG] [t_sigaction] main : Calling handler (signal 16).
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:62         ] [SYSLOG] [t_sigaction] main : values pointer (before signal): 0x0
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:28         ] [SYSLOG] [t_sigaction] handler(sig: 16) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:29         ] [SYSLOG] [t_sigaction] handler(sig: 16) : values pointer (before allocation): 0x0
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:41         ] [SYSLOG] [t_sigaction] values[0] : `0`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:41         ] [SYSLOG] [t_sigaction] values[1] : `1`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:41         ] [SYSLOG] [t_sigaction] values[2] : `2`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:41         ] [SYSLOG] [t_sigaction] values[3] : `3`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:44         ] [SYSLOG] [t_sigaction] handler(sig: 16) : values pointer (after allocation): 0x4aaceb
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:45         ] [SYSLOG] [t_sigaction] handler(sig: 16) : Ending handler.
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:72         ] [SYSLOG] [t_sigaction] main : Returning from handler (signal 16): 0.
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:73         ] [SYSLOG] [t_sigaction] main : values pointer (after signal): 0x4aace71b
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:78         ] [SYSLOG] [t_sigaction] values[0] : `0`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:78         ] [SYSLOG] [t_sigaction] values[1] : `1`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:78         ] [SYSLOG] [t_sigaction] values[2] : `2`
+[SERIAL] [ DF | userspace/tests/t_sigaction.c:78         ] [SYSLOG] [t_sigaction] values[3] : `3`
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (71/90): t_sigfpe
+[SERIAL] [ DF | userspace/tests/t_sigfpe.c:55            ] [SYSLOG] [t_sigfpe] Diving by zero (unrecoverable)...
+[SERIAL] [ DF | userspace/tests/t_sigfpe.c:29            ] [SYSLOG] [t_sigfpe] handler(8) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigfpe.c:31            ] [SYSLOG] [t_sigfpe] handler(8) : Correct signal. FPE
+[SERIAL] [ DF | userspace/tests/t_sigfpe.c:32            ] [SYSLOG] [t_sigfpe] handler(8) : Exiting
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (72/90): t_siginfo
+[TEST]   ok 71 - t_sigfpe
+[TEST]   ok 72 - t_siginfo
+[TEST]   ok 73 - t_sigmask
+[SERIAL] [ DF | userspace/tests/t_siginfo.c:127          ] [SYSLOG] [t_siginfo] Diving by zero (unrecoverable)...
+[SERIAL] [ ER | userspace/tests/t_siginfo.c:139          ] [SYSLOG] [t_siginfo] Attempt to divide by zero.
+[SERIAL] [ DF | userspace/tests/t_siginfo.c:147          ] [SYSLOG] [t_siginfo] d: 1, e: 0
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (73/90): t_sigmask
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:42           ] [SYSLOG] [t_sigmask] main : Blocking signal (16).
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:63           ] [SYSLOG] [t_sigmask] main : Calling handler (16).
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:72           ] [SYSLOG] [t_sigmask] main : Returning from handler (16): 0.
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:74           ] [SYSLOG] [t_sigmask] main : Unblocking signal (16).
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:21           ] [SYSLOG] [t_sigmask] handler(sig: 16) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:23           ] [SYSLOG] [t_sigmask] handler(sig: 16) : Ending handler.
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:82           ] [SYSLOG] [t_sigmask] main : Calling handler (16).
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:21           ] [SYSLOG] [t_sigmask] handler(sig: 16) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:23           ] [SYSLOG] [t_sigmask] handler(sig: 16) : Ending handler.
+[SERIAL] [ DF | userspace/tests/t_sigmask.c:91           ] [SYSLOG] [t_sigmask] main : Returning from handler (16): 0.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (74/90): t_sigusr
+[SERIAL] [ DF | userspace/tests/t_sigusr.c:23            ] [SYSLOG] [t_sigusr] handler(16) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigusr.c:29            ] [SYSLOG] [t_sigusr] handler(16) : Correct signal. SIGUSER
+[SERIAL] [ DF | userspace/tests/t_sigusr.c:43            ] [SYSLOG] [t_sigusr] handler(16) : Ending handler.
+[TEST]   ok 74 - t_sigusr
+[SERIAL] [ DF | userspace/tests/t_sigusr.c:23            ] [SYSLOG] [t_sigusr] handler(17) : Starting handler.
+[SERIAL] [ DF | userspace/tests/t_sigusr.c:29            ] [SYSLOG] [t_sigusr] handler(17) : Correct signal. SIGUSER
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (75/90): t_shebang
+[SERIAL] [ ER | kernel/src/process/process.c:224         ] [PROC  ] This is not executable `/home/user/t_shebang_noexec.sh`!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/no/such/interpreter', flags: 0, mode: 0): The file does n.
+[SERIAL] [ ER | kernel/src/process/process.c:213         ] [PROC  ] Cannot find executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[SERIAL] [ ER | kernel/src/elf/elf.c:490                 ] [ELF   ] ELF Header EI_MAG0 incorrect.
+[SERIAL] [ ER | kernel/src/elf/elf.c:458                 ] [ELF   ] Invalid ELF File.
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/bin/echo hello', flags: 0, mode: 0): The file does not ex.
+[SERIAL] [ ER | kernel/src/process/process.c:213         ] [PROC  ] Cannot find executable!
+[SERIAL] [ ER | kernel/src/process/process.c:821         ] [PROC  ] Failed to load executable!
+[TEST]   ok 75 - t_shebang
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (76/90): t_sync
+[TEST]   ok 76 - t_sync
+[SERIAL] [ DF | userspace/tests/t_sync.c:105             ] [SYSLOG] t_sync: [244] [t_sync] OK
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (77/90): t_sleep
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (78/90): t_spwd
+[TEST]   ok 77 - t_sleep
+[TEST]   ok 78 - t_spwd
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (79/90): t_stopcont
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:42          ] [SYSLOG] [t_stopcont] Child process (PID: 248) started.
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[TEST]   ok 79 - t_stopcont
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:63          ] [SYSLOG] [t_stopcont] Parent sending SIGSTOP to child (PID: 248).
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:71          ] [SYSLOG] [t_stopcont] Parent sending SIGCONT to child (PID: 248).
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:21          ] [SYSLOG] [t_stopcont] Received SIGCONT, continuing execution...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:48          ] [SYSLOG] [t_stopcont] Child process running...
+[SERIAL] [ DF | userspace/tests/t_stopcont.c:79          ] [SYSLOG] [t_stopcont] Parent sending SIGTERM to child (PID: 248).
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (80/90): t_syscall_ni
+[SERIAL] [ DF | userspace/tests/t_syscall_ni.c:33        ] [SYSLOG] t_syscall_ni: [249] syscall 145 (in range, standard args) returned -ENOSYS d
+[SERIAL] [ DF | userspace/tests/t_syscall_ni.c:33        ] [SYSLOG] t_syscall_ni: [249] syscall 120 (in range, frame-pointer special case) retud
+[SERIAL] [ DF | userspace/tests/t_syscall_ni.c:33        ] [SYSLOG] t_syscall_ni: [249] syscall 399 (out of range) returned -ENOSYS as expected
+[SERIAL] [ DF | userspace/tests/t_syscall_ni.c:33        ] [SYSLOG] t_syscall_ni: [249] syscall 4294967295 (negative/out of range) returned -ENd
+[SERIAL] [ DF | userspace/tests/t_syscall_ni.c:63        ] [SYSLOG] t_syscall_ni: [249] t_syscall_ni passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (81/90): t_syslog
+[TEST]   ok 80 - t_syscall_ni
+[TEST]   ok 81 - t_syslog
+[SERIAL] [ WR | userspace/tests/t_syslog.c:22            ] [SYSLOG] syslog_test: [250] [t_syslog] This is a warning message and should appear.
+[SERIAL] [ ER | userspace/tests/t_syslog.c:23            ] [SYSLOG] syslog_test: [250] [t_syslog] This is an error message and should appear.
+[SERIAL] [ CR | userspace/tests/t_syslog.c:24            ] [SYSLOG] syslog_test: [250] [t_syslog] This is a critical message and should appear.
+[SERIAL] [ AL | userspace/tests/t_syslog.c:25            ] [SYSLOG] syslog_test: [250] [t_syslog] This is an alert message and should appear.
+[SERIAL] [ EM | userspace/tests/t_syslog.c:26            ] [SYSLOG] syslog_test: [250] [t_syslog] This is an emergency message and should appea.
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (82/90): t_symlink
+[SERIAL] [ ER | kernel/src/fs/namei.c:285                ] [NAMEI ] Link substitution overflows the path buffer.
+[TEST]   ok 82 - t_symlink
+[TEST]   ok 83 - t_time
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/.t_symlink_deep/dddddddddddddddddddddddddddddddddddddddddddddddddd
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (83/90): t_time
+[SERIAL] [ DF | userspace/tests/t_time.c:31              ] [SYSLOG] Current time is: `Fri Nov 30 16:21:55 3926`
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (84/90): t_userptr
+[SERIAL] [ ER | kernel/src/fs/ext2/ext2_file.c:243       ] [EXT2  ] ext2_open(path: '/home/user/t_userptr.d', flags: 1, mode: 0): The file does.
+[SERIAL] [ ER | kernel/src/fs/vfs.c:779                  ] [VFS   ] vfs_creat(/home/user/t_userptr.d/scratch.txt): Cannot create the given file!
+[TEST]   ok 84 - t_userptr
+[SERIAL] [ ER | kernel/src/process/exec_args.c:256       ] [EXECARG] envp is unreadable, or has too many entries.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:256       ] [EXECARG] envp is unreadable, or has too many entries.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:269       ] [EXECARG] envp is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:269       ] [EXECARG] envp is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ ER | kernel/src/process/exec_args.c:263       ] [EXECARG] argv is unreadable, or exceeds ARG_MAX.
+[SERIAL] [ DF | userspace/tests/t_userptr.c:554          ] [SYSLOG] [t_userptr] all user-pointer checks passed
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (85/90): t_wifsignaled
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal  3: WIFSIGNALED true, WTERMSIG 1
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal  4: WIFSIGNALED true, WTERMSIG 2
+[TEST]   ok 85 - t_wifsignaled
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal  5: WIFSIGNALED true, WTERMSIG 3
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal  6: WIFSIGNALED true, WTERMSIG 4
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal 11: WIFSIGNALED true, WTERMSIG 9
+[SERIAL] [ DF | userspace/tests/t_wifsignaled.c:48       ] [SYSLOG] t_wifsignaled: [255] [t_wifsignaled] signal 15: WIFSIGNALED true, WTERMSIG 5
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (86/90): t_write_read
+[SERIAL] [ DF | userspace/tests/t_write_read.c:224       ] [SYSLOG] [t_write_read] Running `test_write_read`...
+[SERIAL] [ DF | userspace/tests/t_write_read.c:234       ] [SYSLOG] [t_write_read] Running `test_truncate`...
+[SERIAL] [ DF | userspace/tests/t_write_read.c:244       ] [SYSLOG] [t_write_read] Running `test_append`...
+[TEST]   ok 86 - t_write_read
+[TEST]   ok 87 - t_faultinj
+[TEST]   ok 88 - t_indirect_map
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (87/90): t_faultinj
+[SERIAL] [ ER | kernel/src/fs/namei.c:258                ] [NAMEI ] Cannot tell whether `/proc/faultinj` is a symbolic link (-1).
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/proc/faultinj): Cannot resolve path!
+[SERIAL] [ DF | userspace/tests/t_faultinj.c:125         ] [SYSLOG] [t_faultinj] /proc/faultinj is absent: built without ENABLE_ATA_FAULT_INJECo
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (88/90): t_indirect_map
+[SERIAL] [ ER | kernel/src/fs/namei.c:258                ] [NAMEI ] Cannot tell whether `/proc/faultinj` is a symbolic link (-1).
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/proc/faultinj): Cannot resolve path!
+[SERIAL] [ DF | userspace/tests/t_indirect_map.c:197     ] [SYSLOG] [t_indirect_map] /proc/faultinj is absent: built without ENABLE_ATA_FAULT_Io
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (89/90): t_meta_rmw
+[SERIAL] [ ER | kernel/src/fs/namei.c:258                ] [NAMEI ] Cannot tell whether `/proc/faultinj` is a symbolic link (-1).
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/proc/faultinj): Cannot resolve path!
+[SERIAL] [ DF | userspace/tests/t_meta_rmw.c:111         ] [SYSLOG] [t_meta_rmw] /proc/faultinj is absent: built without ENABLE_ATA_FAULT_INJECo
+[TEST]   ok 89 - t_meta_rmw
+[TEST]   ok 90 - t_namei_io
+[SERIAL] [ DF | userspace/bin/runtests.c:349             ] [SYSLOG] Running test (90/90): t_namei_io
+[SERIAL] [ ER | kernel/src/fs/namei.c:258                ] [NAMEI ] Cannot tell whether `/proc/faultinj` is a symbolic link (-1).
+[SERIAL] [ ER | kernel/src/fs/vfs.c:358                  ] [VFS   ] vfs_open(/proc/faultinj): Cannot resolve path!
+[SERIAL] [ DF | userspace/tests/t_namei_io.c:100         ] [SYSLOG] [t_namei_io] /proc/faultinj is absent: built without ENABLE_ATA_FAULT_INJECo
+
+====================================================
+QEMU finished with exit code: 33
+====================================================
+..........................................................................................
+90 tests, 0 failures.
+Test run completed successfully
+make[3]: Leaving directory '/home/namit/projects/MentOS/build'
+[100%] Built target qemu-test
+make[2]: Leaving directory '/home/namit/projects/MentOS/build'
+make[1]: Leaving directory '/home/namit/projects/MentOS/build'
+make: Leaving directory '/home/namit/projects/MentOS/build'
+namit@DESKTOP-NQDLQP7:~/projects/MentOS$
